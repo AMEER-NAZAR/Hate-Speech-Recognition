@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask Form</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Enter Text:</h2>
+    <form action="/process" method="post">
+        <input type="text" name="user_input" required>
+        <input type="submit" value="Submit">
+    </form>
+    <h2>{{val}}</h2>
+</body>
+</html>
